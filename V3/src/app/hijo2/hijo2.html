@@ -1,0 +1,17 @@
+<h2>Lista de productos</h2>
+<table border="1">
+  <tr>
+    <th>ID</th>
+    <th>Nombre</th>
+    <th>Precio</th>
+    <th>Acciones</th>
+  </tr>
+  <tr *ngFor="let producto of recibirProductos">
+    <td>{{ producto.id }}</td>
+    <td>{{ producto.nombre }}</td>
+    <td>{{ producto.precio }}</td>
+    <td>
+      <button (click)="heredarEliminar(producto.id)">Eliminar</button>
+    </td>
+  </tr>
+</table>

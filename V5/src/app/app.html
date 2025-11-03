@@ -1,0 +1,6 @@
+
+<app-cabecera [logoUrl]="'assets/img/logo-pizzeria.png'" (cambiarColor)="cambiarColorElem()"></app-cabecera>
+<br>
+<app-hijo (enviarProducto)="anadirDeHijo($event)"></app-hijo>
+
+<app-hijo2 [recibirProductos]="productos" [colorDefault]="itemsColorDefault" (eliminarProductoHijo2)="eliminar($event)"></app-hijo2>
