@@ -1,0 +1,5 @@
+<header>
+    <img *ngIf="logoUrl" [src]="logoUrl" alt="LogoPizzeria" class="fotopizza">
+    <ng-content></ng-content>
+    <button (click)="cambiarColorElem()">Cambiar color</button>
+</header>

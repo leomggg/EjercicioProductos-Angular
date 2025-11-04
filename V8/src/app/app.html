@@ -1,0 +1,12 @@
+
+<app-cabecera [logoUrl]="'assets/img/logo-pizzeria.png'" (cambiarColor)="cambiarColorElem()"></app-cabecera>
+<br>
+<app-hijo (enviarProducto)="anadirDeHijo($event)"></app-hijo>
+
+<app-hijo2 [recibirProductos]="productos" [colorDefault]="itemsColorDefault" (eliminarProductoHijo2)="eliminar($event)"></app-hijo2>
+
+<br>
+<a href="https://www.google.com" DirectivaRatonEncima>Enlace de prueba</a>
+
+<br><br>Foto del usuario 1: <br><img [src]="usuario1.foto | avatarDefault" width="200px" height="200px">
+<br><br>Foto del usuario 2 (sin foto): <br><img [src]="usuario2.foto | avatarDefault" width="200px" height="200px">
